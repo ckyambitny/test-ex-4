@@ -12,5 +12,32 @@ describe('check types', function () {
 
     it('string', function () {
         expect(type('0')).toEqual('string');
+        expect(type('foo')).toEqual('string');
+        expect(type('')).toEqual('string');
+    });
+
+    it('object', function () {
+        expect(type({})).toEqual('object');
+        expect(type(new Object)).toEqual('object');
+        expect(type(new Date)).toEqual('object');
+        expect(type(window)).toEqual('object');
+    });
+
+    it('function', function () {
+        expect(type(Function)).toEqual('function');
+        expect(type(function foo() {})).toEqual('function');
+    });
+
+    it('a....', function () {
+        // TODO
+    });
+
+    it('u....', function () {
+        // TODO
+    });
+
+    // in ES6
+    it('s....', function () {
+        // TODO
     });
 });
