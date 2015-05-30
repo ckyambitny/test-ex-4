@@ -28,8 +28,9 @@ describe('check types', function () {
         expect(type(function foo() {})).toEqual('function');
     });
 
-    it('a....', function () {
-        // TODO
+    it('a boolean', function () {
+        expect(type(true)).toEqual('boolean');
+        expect(type(false)).toEqual('boolean');
     });
 
     it('u....', function () {
