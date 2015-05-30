@@ -1,7 +1,8 @@
 jest.dontMock('../main');
 
 var type = require('../main').type;
-
+var emptyArr = [];
+var emptyObj = {};
 describe('check types', function () {
     it('number', function () {
         expect(type(1)).toEqual('number');
@@ -34,8 +35,8 @@ describe('check types', function () {
     });
 
     it('undefined', function () {
-        expect(type(jan).toEqual('undefined');
-        expect(type(cokolwiek).toEqual('undefined');
+        expect(type(emptyArr[3])).toEqual('undefined');
+        expect(type(emptyObj.any2)).toEqual('undefined');
     }); 
 
     // in ES6
