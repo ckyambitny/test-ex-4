@@ -33,9 +33,10 @@ describe('check types', function () {
         expect(type(false)).toEqual('boolean');
     });
 
-    it('u....', function () {
-        // TODO
-    });
+    it('undefined', function () {
+        expect(type(jan).toEqual('undefined');
+        expect(type(cokolwiek).toEqual('undefined');
+    }); 
 
     // in ES6
     it('s....', function () {
